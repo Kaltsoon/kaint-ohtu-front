@@ -3,14 +3,14 @@ var API = (function(){
 
 	_public.get_quiz = function(options){
 			$.get('/quiz/' + options.id)
-			.success(function(data){
-				options.success(data);
+			.done(function(data){
+				options.done(data);
  	
  			}).fail(function(data){
  				options.fail(data);
 
  			})
 		};
-
+	
 	return _public;
 })();
