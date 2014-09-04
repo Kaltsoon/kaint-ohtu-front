@@ -4,7 +4,7 @@ QuizApp.directive('sortable', function(){
 			handle: '@'
 		},
 		link: function(scope, elem, attrs){
-			$('#' + scope.handle).sortable();
+			$('#' + scope.handle).sortable({ cursor: 'move', opacity: 0.6 });
 			$('#' + scope.handle).disableSelection();
 		}
 	}
