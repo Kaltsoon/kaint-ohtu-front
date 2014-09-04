@@ -1,29 +1,20 @@
-<div class="page-header">
+<div class="page-header page-header-button">
 	<h1>Create a quiz</h1>
+	<div class="btn-group pull-right btn-header">
+	  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+	    <i class="fa fa-plus"></i> Add an item
+	  </button>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a ng-click="add_open_question()" style="cursor: pointer">Open question</a></li>
+	  </ul>
+	</div>
 </div>
-<ul class="media-list" id="sortable">
-	<li class="media">
+<ul class="media-list" id="quiz-item-list">
+	<li ng-repeat="item in items" class="media quiz-item" handle="quiz-item-list" sortable>
 		<div class="form-group">
-			<label>Lorem ipsum dolor sit amet?</label>
-			<textarea class="form-control"></textarea>
-		</div>
-	</li>
-	<li class="media">
-		<div class="form-group">
-			<label>Lorem ipsum dolor sit amet?</label>
-			<textarea class="form-control"></textarea>
-		</div>
-	</li>
-	<li class="media">
-		<div class="form-group">
-			<label>Lorem ipsum dolor sit amet?</label>
+			<label>{{item.title}}</label>
 			<textarea class="form-control"></textarea>
 		</div>
 	</li>
 </ul>
-<script>
-	$(function() {
-		$("#sortable").sortable();
-		$("#sortable").disableSelection();
-	});
-</script>
+<button class="btn btn-primary"><i class="fa fa-check"></i> Save</button>
