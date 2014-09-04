@@ -1,4 +1,4 @@
-var TEMPLATE = (function(){
+var API = (function(){
 	var _public = {};
 
 	_public.get_quiz = function(options){
