@@ -6,6 +6,7 @@ $.fn.extend({
 
             $(_this).addClass('panel panel-default');
             $(_this).html(TEMPLATE.render_quiz({
+                title: 'My awesome quiz',
                 items: [
                 {
                     type: 'open_question',

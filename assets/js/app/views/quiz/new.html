@@ -1,3 +1,29 @@
 <div class="page-header">
 	<h1>Create a quiz</h1>
 </div>
+<ul class="media-list" id="sortable">
+	<li class="media">
+		<div class="form-group">
+			<label>Lorem ipsum dolor sit amet?</label>
+			<textarea class="form-control"></textarea>
+		</div>
+	</li>
+	<li class="media">
+		<div class="form-group">
+			<label>Lorem ipsum dolor sit amet?</label>
+			<textarea class="form-control"></textarea>
+		</div>
+	</li>
+	<li class="media">
+		<div class="form-group">
+			<label>Lorem ipsum dolor sit amet?</label>
+			<textarea class="form-control"></textarea>
+		</div>
+	</li>
+</ul>
+<script>
+	$(function() {
+		$("#sortable").sortable();
+		$("#sortable").disableSelection();
+	});
+</script>

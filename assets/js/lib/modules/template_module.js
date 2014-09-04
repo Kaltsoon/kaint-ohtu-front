@@ -15,7 +15,7 @@ var TEMPLATE = (function(){
 			quiz_body += item_template(item);
 		});
 
-		return quiz_template({ title: 'Lorem ipsum', body: quiz_body });
+		return quiz_template({ title: data.title, body: quiz_body });
 	}
 
 	return _public;
