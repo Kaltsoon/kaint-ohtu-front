@@ -8,3 +8,4 @@ QuizApp.config(['$routeProvider', function($routeProvider){
 		redirectTo: '/quiz/new'
 	});
 }]);
+
